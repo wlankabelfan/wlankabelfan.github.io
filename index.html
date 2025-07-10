@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI Basics - Wiki mit KI-Erklärungen</title>
+    <title>MI Basics - Wiki mit KI-Erklärungen und Bildern</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -14,7 +14,6 @@
         .target-section {
             scroll-margin-top: 80px; /* Offset for the sticky header */
         }
-        /* Simple animation for the modal */
         @keyframes fadeIn {
             from { opacity: 0; transform: scale(0.95); }
             to { opacity: 1; transform: scale(1); }
@@ -22,7 +21,6 @@
         .modal-content {
             animation: fadeIn 0.3s ease-out;
         }
-        /* Loading spinner */
         .loader {
             border: 4px solid #f3f3f3;
             border-radius: 50%;
@@ -56,7 +54,6 @@
             <aside class="md:col-span-1 bg-white p-6 rounded-lg shadow-md h-fit sticky top-28">
                 <h2 class="text-lg font-bold mb-4 border-b pb-2">Lernziele</h2>
                 <ul class="space-y-2">
-                    <!-- Navigation links remain the same -->
                     <li><a href="#handhabung" class="font-semibold text-gray-700 hover:text-blue-600">Handhabung</a></li>
                     <ul class="ml-4 space-y-1 mt-1 text-sm">
                         <li><a href="#einschalten" class="text-gray-600 hover:text-blue-500">› Ein- & Ausschalten</a></li>
@@ -104,6 +101,7 @@
                                     <li>Drücke den Knopf einmal kurz.</li>
                                     <li>Warte einen Moment, bis der Computer gestartet ist und du den Anmelde-Bildschirm siehst.</li>
                                 </ol>
+                                <img src="https://placehold.co/600x150/e2e8f0/4a5568?text=Bild:+Power-Knopf+am+Computer" alt="Platzhalterbild für Power-Knopf" class="my-4 rounded-lg shadow-sm">
                                 <p><strong class="font-semibold">Herunterfahren:</strong></p>
                                  <ol class="list-decimal list-inside space-y-2 pl-4">
                                     <li>Klicke auf das <strong class="text-blue-600">Start-Menü</strong> (Windows-Symbol) ganz unten links auf dem Bildschirm.</li>
@@ -111,6 +109,7 @@
                                     <li>Wähle im Menü die Option <strong class="text-blue-600">"Herunterfahren"</strong>.</li>
                                     <li>Der Computer schaltet sich nun komplett aus.</li>
                                 </ol>
+                                <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Screenshot:+Startmenü+mit+Herunterfahren-Option" alt="Platzhalter-Screenshot für das Herunterfahren" class="my-4 rounded-lg shadow-sm">
                             </div>
                         </div>
                         <button class="explain-button mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
@@ -124,15 +123,10 @@
                             <div class="space-y-4 text-gray-700">
                                 <p><strong class="font-semibold">Starten:</strong></p>
                                 <p>Finde das Symbol des Programms (z.B. Word, Chrome, Teams) auf dem Desktop oder im Start-Menü und mache einen <strong class="text-blue-600">Doppelklick</strong> darauf.</p>
+                                <img src="https://placehold.co/600x300/e2e8f0/4a5568?text=Screenshot:+Programm-Icons+auf+dem+Desktop" alt="Platzhalter-Screenshot für Programm-Icons" class="my-4 rounded-lg shadow-sm">
                                 <p><strong class="font-semibold">Schliessen:</strong></p>
                                 <p>Jedes Programmfenster hat ganz oben rechts drei Symbole. Klicke auf das <strong class="text-red-600">"X"</strong>, um das Programm zu schliessen.</p>
-                                <div class="flex justify-end bg-gray-100 p-2 rounded-md">
-                                    <div class="flex space-x-2">
-                                        <span class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center font-bold text-gray-700">-</span>
-                                        <span class="w-5 h-5 bg-green-400 rounded-full flex items-center justify-center font-bold text-gray-700">□</span>
-                                        <span class="w-5 h-5 bg-red-500 rounded-full flex items-center justify-center font-bold text-white">X</span>
-                                    </div>
-                                </div>
+                                <img src="https://placehold.co/600x100/e2e8f0/4a5568?text=Screenshot:+Schliessen-Knopf+(X)+oben+rechts" alt="Platzhalter-Screenshot für Schliessen-Knopf" class="my-4 rounded-lg shadow-sm">
                             </div>
                         </div>
                         <button class="explain-button mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
@@ -140,14 +134,15 @@
                         </button>
                     </article>
 
-                    <!-- Add explain-button to all other articles as well... -->
                     <article id="fenster" class="bg-white p-6 rounded-lg shadow-md mb-8 target-section">
                         <div class="content">
                             <h3 class="text-xl font-semibold mb-3 text-blue-700">Ich kann ein Programmfenster minimieren, maximieren und in der Grösse verändern.</h3>
                              <div class="space-y-4 text-gray-700">
-                                <p><strong class="font-semibold">Minimieren (verstecken):</strong> Klicke auf den Strich <strong class="text-yellow-500">"-"</strong> oben rechts. Das Fenster verschwindet in der Taskleiste unten. Klicke dort auf das Programmsymbol, um es wieder zu zeigen.</p>
-                                <p><strong class="font-semibold">Maximieren (ganzer Bildschirm):</strong> Klicke auf das Viereck <strong class="text-green-500">"□"</strong> oben rechts. Das Fenster füllt nun den ganzen Bildschirm. Klickst du nochmal darauf, wird es wieder kleiner.</p>
-                                <p><strong class="font-semibold">Grösse verändern:</strong> Bewege die Maus an den Rand oder in eine Ecke des Fensters, bis der Mauszeiger zu einem Doppelpfeil wird (<span class="font-bold">↔</span> oder <span class="font-bold">⤡</span>). Klicke, halte die Maustaste gedrückt und ziehe das Fenster auf die gewünschte Grösse.</p>
+                                <p>Oben rechts im Fenster findest du diese drei Knöpfe:</p>
+                                <img src="https://placehold.co/600x100/e2e8f0/4a5568?text=Screenshot:+Minimieren,+Maximieren,+Schliessen" alt="Platzhalter-Screenshot für Fenster-Steuerung" class="my-4 rounded-lg shadow-sm">
+                                <p><strong class="font-semibold">Minimieren (verstecken):</strong> Klicke auf den Strich <strong class="text-yellow-500">"-"</strong>. Das Fenster verschwindet in der Taskleiste unten.</p>
+                                <p><strong class="font-semibold">Maximieren (ganzer Bildschirm):</strong> Klicke auf das Viereck <strong class="text-green-500">"□"</strong>. Das Fenster füllt nun den ganzen Bildschirm.</p>
+                                <p><strong class="font-semibold">Grösse verändern:</strong> Bewege die Maus an den Rand oder in eine Ecke des Fensters, bis der Mauszeiger zu einem Doppelpfeil wird. Klicke, halte und ziehe.</p>
                             </div>
                         </div>
                         <button class="explain-button mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
@@ -160,9 +155,11 @@
                             <h3 class="text-xl font-semibold mb-3 text-blue-700">Ich kann zwischen zwei geöffneten Programmen wechseln.</h3>
                             <div class="space-y-4 text-gray-700">
                                <p><strong class="font-semibold">Möglichkeit 1: Taskleiste</strong></p>
-                               <p>Am unteren Bildschirmrand siehst du die Symbole aller geöffneten Programme. Klicke einfach auf das Symbol des Programms, zu dem du wechseln möchtest.</p>
+                               <p>Klicke unten in der Taskleiste auf das Symbol des gewünschten Programms.</p>
+                               <img src="https://placehold.co/600x80/e2e8f0/4a5568?text=Screenshot:+Taskleiste+mit+offenen+Programmen" alt="Platzhalter-Screenshot der Taskleiste" class="my-4 rounded-lg shadow-sm">
                                <p><strong class="font-semibold">Möglichkeit 2: Tastenkombination (für Profis)</strong></p>
-                               <p>Halte die <strong class="text-blue-600">`Alt`</strong>-Taste gedrückt und drücke dann die <strong class="text-blue-600">`Tab`</strong>-Taste (die mit den zwei Pfeilen). Es erscheint eine Übersicht aller Fenster. Halte `Alt` weiter gedrückt und tippe mehrmals auf `Tab`, um ein Fenster auszuwählen. Lass dann beide Tasten los.</p>
+                               <p>Halte die <strong class="text-blue-600">`Alt`</strong>-Taste gedrückt und drücke dann die <strong class="text-blue-600">`Tab`</strong>-Taste.</p>
+                               <img src="https://placehold.co/600x300/e2e8f0/4a5568?text=Screenshot:+Alt+und+Tab+Ansicht" alt="Platzhalter-Screenshot für Alt+Tab" class="my-4 rounded-lg shadow-sm">
                             </div>
                         </div>
                         <button class="explain-button mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
@@ -171,13 +168,23 @@
                     </article>
                 </section>
                 
-                <!-- Sections with Explain Buttons -->
                 <section id="logins" class="target-section">
                     <h2 class="text-3xl font-bold mb-6 border-b-2 border-green-500 pb-2">Logins und Passwörter</h2>
                     <article id="anmelden" class="bg-white p-6 rounded-lg shadow-md mb-8 target-section">
                         <div class="content">
                             <h3 class="text-xl font-semibold mb-3 text-green-700">Ich kann mich am Computer und in Teams anmelden.</h3>
-                            <p class="text-gray-700">Wenn du den Computer startest oder ein Programm wie Teams öffnest, erscheint ein Anmeldefenster. Gib dort deinen persönlichen <strong class="text-green-600">Benutzernamen</strong> (oft deine E-Mail-Adresse) und dein <strong class="text-green-600">Passwort</strong> ein. Achte auf Gross- und Kleinschreibung!</p>
+                            <p class="text-gray-700">Gib deinen Benutzernamen und dein Passwort in die Anmeldemaske ein.</p>
+                            <img src="https://placehold.co/600x350/e2e8f0/4a5568?text=Screenshot:+Anmeldefenster+von+Teams" alt="Platzhalter-Screenshot für Anmeldefenster" class="my-4 rounded-lg shadow-sm">
+                        </div>
+                        <button class="explain-button mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                            Erkläre es mir einfacher!
+                        </button>
+                    </article>
+                    <article id="passwort-manager" class="bg-white p-6 rounded-lg shadow-md target-section">
+                        <div class="content">
+                            <h3 class="text-xl font-semibold mb-3 text-green-700">Ich nutze im Browser einen Passwortmanager.</h3>
+                            <p class="text-gray-700">Wenn der Browser fragt, ob er ein Passwort speichern soll, klicke auf "Speichern".</p>
+                            <img src="https://placehold.co/600x200/e2e8f0/4a5568?text=Screenshot:+Browser-Frage+'Passwort+speichern?'" alt="Platzhalter-Screenshot für Passwort-Manager" class="my-4 rounded-lg shadow-sm">
                         </div>
                         <button class="explain-button mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
                             Erkläre es mir einfacher!
@@ -189,20 +196,11 @@
                             <div class="space-y-4 text-gray-700">
                                 <p>Dein Passwort ist wie dein Hausschlüssel. Du gibst es niemandem weiter!</p>
                                 <ul class="list-disc list-inside space-y-2 pl-4">
-                                    <li><strong class="font-semibold">Nicht verraten:</strong> Sage dein Passwort niemandem. Nicht deinen Freunden, nicht per E-Mail, nicht im Chat.</li>
+                                    <li><strong class="font-semibold">Nicht verraten:</strong> Sage dein Passwort niemandem.</li>
                                     <li><strong class="font-semibold">Lehrpersonen fragen nie:</strong> Deine Lehrperson wird dich nie nach deinem Passwort fragen.</li>
                                     <li><strong class="font-semibold">Sicher ist sicher:</strong> Klebe es nicht auf einem Zettel an den Bildschirm.</li>
                                 </ul>
                             </div>
-                        </div>
-                        <button class="explain-button mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
-                            Erkläre es mir einfacher!
-                        </button>
-                    </article>
-                    <article id="passwort-manager" class="bg-white p-6 rounded-lg shadow-md target-section">
-                        <div class="content">
-                            <h3 class="text-xl font-semibold mb-3 text-green-700">Ich nutze im Browser einen Passwortmanager.</h3>
-                            <p class="text-gray-700">Wenn du dich auf einer Webseite anmeldest, fragt dich der Browser (z.B. Chrome, Edge) oft: "Passwort speichern?". Klicke auf <strong class="text-green-600">"Speichern"</strong>. Der Browser merkt sich dann dein Passwort für diese Seite. Das ist wie ein digitaler Schlüsselbund. Das ist sicher und sehr praktisch, weil du dir nicht alle Passwörter merken musst.</p>
                         </div>
                         <button class="explain-button mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
                             Erkläre es mir einfacher!
@@ -216,12 +214,12 @@
                         <div class="content">
                             <h3 class="text-xl font-semibold mb-3 text-yellow-700">Ich kann einen neuen Ordner erstellen und ihm einen passenden Namen geben.</h3>
                              <ol class="list-decimal list-inside space-y-2 pl-4 text-gray-700">
-                                <li>Öffne den <strong class="text-yellow-600">Explorer</strong> (das gelbe Ordner-Symbol in der Taskleiste).</li>
-                                <li>Navigiere an den Ort, wo du den Ordner erstellen willst (z.B. unter "Dokumente").</li>
+                                <li>Öffne den <strong class="text-yellow-600">Explorer</strong> (das gelbe Ordner-Symbol).</li>
                                 <li>Mache einen <strong class="text-yellow-600">Rechtsklick</strong> auf eine freie, weisse Fläche.</li>
                                 <li>Wähle im Menü <strong class="text-yellow-600">"Neu"</strong> und dann <strong class="text-yellow-600">"Ordner"</strong>.</li>
-                                <li>Ein neuer Ordner erscheint. Der Name ist markiert. Tippe sofort einen passenden Namen ein (z.B. "Deutsch Hausaufgaben") und drücke die <strong class="text-yellow-600">Enter-Taste</strong>.</li>
+                                <li>Tippe einen Namen ein und drücke <strong class="text-yellow-600">Enter</strong>.</li>
                             </ol>
+                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Screenshot:+Rechtsklick+->+Neu+->+Ordner" alt="Platzhalter-Screenshot für Ordner erstellen" class="my-4 rounded-lg shadow-sm">
                         </div>
                         <button class="explain-button mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
                             Erkläre es mir einfacher!
@@ -231,12 +229,10 @@
                         <div class="content">
                             <h3 class="text-xl font-semibold mb-3 text-yellow-700">Ich kann eine Datei in einem bestimmten Ordner speichern.</h3>
                             <ol class="list-decimal list-inside space-y-2 pl-4 text-gray-700">
-                                <li>Wenn du in einem Programm (z.B. Word) fertig bist, klicke auf <strong class="text-yellow-600">"Datei"</strong> und dann <strong class="text-yellow-600">"Speichern unter"</strong>.</li>
-                                <li>Es öffnet sich ein Fenster. Klicke auf <strong class="text-yellow-600">"Durchsuchen"</strong>.</li>
-                                <li>Navigiere nun zu dem Ordner, in dem du die Datei ablegen willst (z.B. "Dokumente" -> "Deutsch Hausaufgaben").</li>
-                                <li>Gib der Datei unten im Feld "Dateiname" einen sinnvollen Namen.</li>
-                                <li>Klicke auf den <strong class="text-yellow-600">"Speichern"</strong>-Knopf.</li>
+                                <li>Klicke auf <strong class="text-yellow-600">"Datei"</strong> -> <strong class="text-yellow-600">"Speichern unter"</strong>.</li>
+                                <li>Wähle den richtigen Ordner aus, gib einen Namen ein und klicke <strong class="text-yellow-600">"Speichern"</strong>.</li>
                             </ol>
+                            <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Screenshot:+Speichern-unter-Dialogfenster" alt="Platzhalter-Screenshot für Speichern unter" class="my-4 rounded-lg shadow-sm">
                         </div>
                         <button class="explain-button mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
                             Erkläre es mir einfacher!
@@ -246,10 +242,11 @@
                         <div class="content">
                             <h3 class="text-xl font-semibold mb-3 text-yellow-700">Ich kann eine gespeicherte Datei wiederfinden und öffnen.</h3>
                             <ol class="list-decimal list-inside space-y-2 pl-4 text-gray-700">
-                                 <li>Öffne den <strong class="text-yellow-600">Explorer</strong> (das gelbe Ordner-Symbol).</li>
-                                 <li>Navigiere zu dem Ordner, in dem du die Datei gespeichert hast.</li>
-                                 <li>Wenn du die Datei siehst, mache einen <strong class="text-yellow-600">Doppelklick</strong> darauf, um sie zu öffnen.</li>
+                                 <li>Öffne den <strong class="text-yellow-600">Explorer</strong>.</li>
+                                 <li>Navigiere zum richtigen Ordner.</li>
+                                 <li>Mache einen <strong class="text-yellow-600">Doppelklick</strong> auf die Datei.</li>
                             </ol>
+                             <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Screenshot:+Datei+im+Explorer+öffnen" alt="Platzhalter-Screenshot für Datei öffnen" class="my-4 rounded-lg shadow-sm">
                         </div>
                         <button class="explain-button mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
                             Erkläre es mir einfacher!
@@ -265,8 +262,8 @@
                             <div class="space-y-4 text-gray-700">
                                 <p>Stell dir den Computer wie eine Werkstatt vor:</p>
                                 <ul class="list-disc list-inside space-y-2 pl-4">
-                                    <li><strong class="text-purple-600">Windows (das Betriebssystem) ist der Chef:</strong> Der Chef organisiert alles. Er startet den Computer, verwaltet die Ordner, sorgt dafür, dass die Maus funktioniert und sagt den Werkzeugen, was sie tun sollen. Ohne den Chef läuft gar nichts.</li>
-                                    <li><strong class="text-purple-600">Programme (Word, Teams, etc.) sind die Werkzeuge:</strong> Jedes Werkzeug hat eine spezielle Aufgabe. Mit dem "Word-Werkzeug" schreibst du Texte. Mit dem "Chrome-Werkzeug" gehst du ins Internet. Mit dem "Teams-Werkzeug" machst du Videoanrufe. Du brauchst immer den Chef (Windows), um ein Werkzeug (Programm) benutzen zu können.</li>
+                                    <li><strong class="text-purple-600">Windows (das Betriebssystem) ist der Chef.</strong></li>
+                                    <li><strong class="text-purple-600">Programme (Word, Teams, etc.) sind die Werkzeuge.</strong></li>
                                 </ul>
                             </div>
                         </div>
@@ -278,17 +275,11 @@
                         <div class="content">
                             <h3 class="text-xl font-semibold mb-3 text-purple-700">Ich kann die wichtigsten Programme benennen und ihre Funktion beschreiben.</h3>
                              <ul class="space-y-4 text-gray-700">
-                                <li><strong class="text-purple-600">Webbrowser (z.B. Chrome, Edge, Safari):</strong> Das Tor zum Internet. Du benutzt es, um Webseiten zu besuchen, zu recherchieren und Videos zu schauen.</li>
-                                <li><strong class="text-purple-600">Office (Word, PowerPoint, Excel):</strong> Das Büro-Paket.
-                                    <ul class="list-decimal list-inside space-y-1 pl-6 mt-1">
-                                        <li><strong>Word:</strong> Texte schreiben (Briefe, Geschichten).</li>
-                                        <li><strong>PowerPoint:</strong> Präsentationen erstellen.</li>
-                                        <li><strong>Excel:</strong> Tabellen und Rechnungen machen.</li>
-                                    </ul>
-                                </li>
-                                <li><strong class="text-purple-600">Teams:</strong> Das Kommunikations-Programm für die Schule. Für Chats, Videoanrufe und um Aufgaben zu erhalten.</li>
-                                <li><strong class="text-purple-600">Outlook:</strong> Das E-Mail-Programm.</li>
-                                <li><strong class="text-purple-600">OneNote:</strong> Dein digitales Notizheft für alle Fächer.</li>
+                                <li><strong class="text-purple-600">Webbrowser:</strong> Tor zum Internet.</li>
+                                <li><strong class="text-purple-600">Office:</strong> Büro-Paket (Word, PowerPoint, Excel).</li>
+                                <li><strong class="text-purple-600">Teams:</strong> Kommunikation für die Schule.</li>
+                                <li><strong class="text-purple-600">Outlook:</strong> E-Mail-Programm.</li>
+                                <li><strong class="text-purple-600">OneNote:</strong> Digitales Notizheft.</li>
                             </ul>
                         </div>
                         <button class="explain-button mt-4 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
@@ -309,7 +300,6 @@
                 <button id="close-modal" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
             </div>
             <div id="modal-body" class="p-6 overflow-y-auto">
-                <!-- Loading spinner will be shown here -->
                 <div class="flex justify-center items-center h-40">
                     <div class="loader"></div>
                 </div>
@@ -325,47 +315,37 @@
     </footer>
 
     <script>
-        // Get all necessary elements
         const explainButtons = document.querySelectorAll('.explain-button');
         const modal = document.getElementById('explanation-modal');
         const modalBody = document.getElementById('modal-body');
         const closeModalButton = document.getElementById('close-modal');
 
-        // Function to open the modal
         const openModal = () => {
             modal.classList.remove('hidden');
         };
 
-        // Function to close the modal
         const closeModal = () => {
             modal.classList.add('hidden');
         };
 
-        // Event listener for closing the modal
         closeModalButton.addEventListener('click', closeModal);
         modal.addEventListener('click', (e) => {
-            // Close modal if backdrop is clicked
             if (e.target === modal) {
                 closeModal();
             }
         });
 
-        // Add event listener to each "Explain" button
         explainButtons.forEach(button => {
             button.addEventListener('click', async (event) => {
-                // 1. Get the content from the parent article
                 const article = event.target.closest('article');
                 const contentElement = article.querySelector('.content');
                 const textToExplain = contentElement.innerText;
 
-                // 2. Show the modal with a loading spinner
                 modalBody.innerHTML = `<div class="flex justify-center items-center h-40"><div class="loader"></div></div>`;
                 openModal();
 
-                // 3. Call the Gemini API
                 try {
                     const simplifiedText = await callGeminiAPI(textToExplain);
-                    // 4. Display the result in the modal
                     modalBody.innerHTML = simplifiedText;
                 } catch (error) {
                     console.error('Error calling Gemini API:', error);
@@ -374,19 +354,9 @@
             });
         });
 
-        /**
-         * Calls the Gemini API to simplify the given text.
-         * @param {string} text The text to be simplified.
-         * @returns {Promise<string>} The simplified text as an HTML string.
-         */
         async function callGeminiAPI(text) {
-            // IMPORTANT: Do not expose an API key in client-side code in a real-world application.
-            // This is a simplified example. In a production environment, this call should be
-            // made through a secure backend server.
-            const apiKey = ""; // Leave empty, it will be handled by the environment
+            const apiKey = ""; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-            // Construct the prompt for the model
             const prompt = `Erkläre den folgenden Text in sehr einfachen Worten für einen 10-jährigen Schüler in der Schweiz. Benutze einfache Sätze und vermeide Fachbegriffe. Formatiere die Antwort als HTML mit Absätzen (<p> tags). Der Text ist: "${text}"`;
 
             const payload = {
@@ -414,10 +384,8 @@
             if (result.candidates && result.candidates.length > 0 &&
                 result.candidates[0].content && result.candidates[0].content.parts &&
                 result.candidates[0].content.parts.length > 0) {
-                // Return the generated text
                 return result.candidates[0].content.parts[0].text;
             } else {
-                // Handle cases where the response structure is unexpected
                 console.error("Unexpected response structure:", result);
                 return "<p>Die Antwort konnte nicht verarbeitet werden.</p>";
             }
@@ -426,4 +394,3 @@
 
 </body>
 </html>
-
